@@ -1,3 +1,5 @@
+# Construire la CI d'un monorepo: les parent-child pipelines de Gitlab-ci
+
 Le _monorepo_ est une stratégie de versionning qui consiste à n'avoir qu'un seul _repository_ pour les bases de code de plusieurs projets. Ces projets ont généralement leur propre cycle de vie, mais aussi leurs propres technologies. La construction du livrable de chaque projet peut alors être soumise à des contraintes différentes. Il est dès lors compliqué de mettre en place une chaîne de CI (_continuous integration_) qui puisse fonctionner pour l'ensemble.
 Sortis en janvier 2020, les [parent-child pipelines](https://docs.gitlab.com/ee/ci/parent_child_pipelines.html) sont la réponse apportée par _Gitlab_ aux problématiques de CI liées à l'exploitation des _monorepos_.
 
